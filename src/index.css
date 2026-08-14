@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@500;600;700;800&display=swap');
+
+@import "tailwindcss";
+
+:root {
+  font-family: "Inter", sans-serif;
+  color: #f8fafc;
+  background: #050b1c;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 110px;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+
+  background:
+    radial-gradient(circle at 50% -10%,
+      rgba(37, 99, 235, 0.22),
+      transparent 35%),
+    radial-gradient(circle at 0% 35%,
+      rgba(14, 165, 233, 0.08),
+      transparent 25%),
+    radial-gradient(circle at 100% 65%,
+      rgba(34, 211, 238, 0.07),
+      transparent 25%),
+    #050b1c;
+
+  color: #f8fafc;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Poppins", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+::selection {
+  background: #22d3ee;
+  color: #071a45;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #050b1c;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(#2563eb,
+      #22d3ee);
+
+  border-radius: 999px;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* ================= WEBHARNIX ANIMATIONS ================= */
+
+@keyframes webharnix-float {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-12px);
+  }
+}
+
+@keyframes webharnix-float-slow {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(10px);
+  }
+}
+
+@keyframes webharnix-pulse {
+  0%,
+  100% {
+    opacity: 0.35;
+    transform: scale(1);
+  }
+
+  50% {
+    opacity: 0.7;
+    transform: scale(1.08);
+  }
+}
+
+@keyframes webharnix-shimmer {
+  0% {
+    background-position: -200% center;
+  }
+
+  100% {
+    background-position: 200% center;
+  }
+}
+
+@keyframes webharnix-orbit {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes webharnix-grid {
+  from {
+    background-position: 0 0;
+  }
+
+  to {
+    background-position: 40px 40px;
+  }
+}
+
+.webharnix-float {
+  animation: webharnix-float 5s ease-in-out infinite;
+}
+
+.webharnix-float-slow {
+  animation: webharnix-float-slow 6s ease-in-out infinite;
+}
+
+.webharnix-pulse {
+  animation: webharnix-pulse 4s ease-in-out infinite;
+}
+
+.webharnix-orbit {
+  animation: webharnix-orbit 18s linear infinite;
+}
+
+.webharnix-grid {
+  animation: webharnix-grid 8s linear infinite;
+}
+
+.webharnix-shimmer {
+  background-size: 200% auto;
+  animation: webharnix-shimmer 4s linear infinite;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: #050B1C;
+  color: white;
+  overflow-x: hidden;
+}
+
+::selection {
+  background: rgba(34, 211, 238, 0.25);
+  color: #fff;
+}
