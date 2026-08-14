@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://webharnix.vercel.app/sitemap.xml
